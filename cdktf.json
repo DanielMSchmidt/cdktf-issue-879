@@ -1,0 +1,11 @@
+{
+  "language": "python",
+  "app": "pipenv run python main.py",
+  "terraformProviders": ["aws@~> 3.52.0", "hashicorp/local@2.1.0"],
+  "terraformModules": ["terraform-aws-modules/lambda/aws"],
+  "codeMakerOutput": "imports",
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}
